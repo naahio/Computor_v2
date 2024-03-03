@@ -1,2 +1,48 @@
+# rules :
+    -   cannot use any native type of variables to the language chosen for the management of complex numbers.
+    -   No library easing the management of complex numbers/matrices is authorized.
+    -   You are responsible for the proper installation of the dump environment on which
+                you will be developing and on which you will be corrected.
+
 # Mandatory :
+
+    •   answer specifications
+        ◦ Rational numbers.
+        ◦ Complex numbers (with rational coefficients).
+        ◦ Matrices.
+        ◦ Polynomial equations of degrees less than or equal to 2.
+
+    • Assignment of an expression to a variable by type inference
+    • Reassignment of an existing variable with an expression of another type
+    • Assignment of a variable to another variable (existing or not)
+    • Resolution of a mathematical expression with or without defined variable (s)
+    • Resolution of an equation of degree less than or equal to 2
+    • Operations between types, as much as possible
+    • Exit the program itself (by keyword, signal, keyboard shortcut ...)
+
+
+
+    > A ∈ M n,p(Q)
+
+    > x = a + ib  (a, b) ∈ Q^2
+
+    > 2/5 + i * 8/4 = 
+
+    > funA(x) = 2*x^5 + 4x^2 - 5*x + 4  => (a+b)^4 (a+3b)^2 = 
+
+    > > varA = 2 + 4 *2 - 5 %4 + 2 * (4 + 5) = 27
+
+        $./computorv2
+            > funA(x) = 2 * 4 + x
+        8 + x
+            > funB(x) = 4 -5 + (x + 2)^2 - 4
+        (x + 2)^2 - 5
+            > funC(x) = 4x + 5 - 2
+        4 * x + 3
+            > funA(2) + funB(4) = ?
+        41
+            > funC(3) = ?
+        15
+
+
     

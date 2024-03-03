@@ -3,7 +3,6 @@ from enum import Enum
 # Importing macros from parser_macro.py
 from parser_macro import *
 
-
 class TokenType(Enum):
     EWHITESPACE = 0
     ENAME = 1
@@ -13,7 +12,6 @@ class TokenType(Enum):
     ESYMBOL = 5
     EEXPRESSION = 6
     EEMPTY = 7
-
 
 class Tokenizer:
     def __init__(self, raw):
