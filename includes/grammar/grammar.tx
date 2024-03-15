@@ -1,0 +1,18 @@
+Calculator: expressions*=Expression;
+
+Expression: Addition | Subtraction | Multiplication | Division | Number | ComplexNumber | Matrix | Polynomial;
+
+Addition: left=Expression '+' right=Expression;
+Subtraction: left=Expression '-' right=Expression;
+Multiplication: left=Expression '*' right=Expression;
+Division: left=Expression '/' right=Expression;
+
+Number: /\d+(\.\d+)?/;
+
+ComplexNumber: '(' real=Number '+' imag=Number 'i' ')';
+Matrix: '[' rows*=Row ']';
+Row: elements*=Number;
+
+Polynomial: Degree1 | Degree2;
+Degree1: coefficient=Number '*x' '+' constant=Number;
+Degree2: coefficient=Number '*x^2' '+' Degree1;
